@@ -1,4 +1,4 @@
-package OlaMundo;
+package Semana1.OlaMundo;
 
 /**
  * OlaMundo
