@@ -31,6 +31,7 @@ public class LerNome {
             System.out.println("Acesso permitido.");
         }
 
+        // Teste de Loop
         for (int i = 0; i < 10; i++) {
             System.out.println(i);
         }
