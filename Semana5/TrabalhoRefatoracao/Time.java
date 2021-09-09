@@ -3,6 +3,11 @@ package Semana5.TrabalhoRefatoracao;
 // refatorar as classes Jogador.java, Time.java
 public class Time {
     //atributos
-    public String nome;
-    public String escudo;
+    private String nome;
+    // private String escudo;
+
+    public Time(){
+        this.nome = "Fluminese";
+        // this.escudo = "fluminese.jpg";
+    }
 }

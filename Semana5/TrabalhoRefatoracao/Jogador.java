@@ -3,10 +3,10 @@ package Semana5.TrabalhoRefatoracao;
 // Jogador.java, Time.java
 public class Jogador {
     //atributos
-    public String nome;
-    public String sobreNome;
-    public Integer idade;
-    public Time time;
+    private String nome;
+    private String sobreNome;
+    private Integer i;
+    private Time time;
 
     //construtor
     public Jogador(){

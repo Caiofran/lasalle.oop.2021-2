@@ -13,11 +13,9 @@ public class Bike {
 
     //construtor
     public Bike(){
-
         this.marca = "caloi";
         this.qtdMarchas = 5;
         this.setCor("vermelha");
-
     }
 
     public Bike(String cor)

@@ -11,4 +11,38 @@ package Semana5.TrabalhoRefatoracao;
 // 5-Nunes
 public class Escalacao {
     
+    
+    private Integer qtdJogadores;
+    private Integer jogadorAtual = 1;
+    // Time time = new Time();
+    private Time time;
+    
+    public Escalacao(){
+        this.qtdJogadores = 5;
+    }
+    
+    public void criacaoJogardor()
+    {
+        if(this.jogadorAtual==this.qtdJogadores)
+        {
+            System.out.println("Já estou no limite máximo de jogadores." );
+        }
+        else
+        {
+            this.jogadorAtual++;
+        }
+    }
+
+    public void imprimir()
+    {
+        
+    }
+
+    // public void diminuirMarcha()
+    // {
+    //     if(this.jogadorAtual == 1)
+    //         System.out.println("Já estou na marcha mínima.");
+    //     else
+    //         this.jogadorAtual--;
+    // }
 }
