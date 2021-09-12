@@ -8,7 +8,17 @@ public class Time {
     // private String escudo;
 
     public Time() {
-        this.nome = "Fluminese";
+        this.nome = "Flamengo";
         // this.escudo = "fluminese.jpg";
+    }
+
+    public String getNome()
+    {
+        return nome;
+    }
+
+    public void setNome(String nome)
+    {
+        this.nome = nome;
     }
 }
