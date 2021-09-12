@@ -13,12 +13,13 @@ package Semana5.TrabalhoRefatoracao;
 public class Escalacao {
 
     private Integer qtdJogadores;
-    private Integer jogadorAtual = 1;
+    private Integer jogadorAtual;
     // Time time = new Time();
     private Time time;
 
     public Escalacao() {
         this.qtdJogadores = 5;
+        this.jogadorAtual = 1;
     }
 
     public void criacaoJogardor() {
