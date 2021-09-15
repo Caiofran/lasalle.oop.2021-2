@@ -10,42 +10,14 @@ package Semana5.TrabalhoRefatoracao;
 // 3-Junior
 // 4-Andrade
 // 5-Nunes
-public class Escalacao extends Jogador {
 
-    private Integer maxJogadores;
-    private Integer jogadorAtual;
-    // Time time = new Time();
-    // private Time time;
+public class Escalacao {
 
-    Jogador jogador = new Jogador();
-    Time time = new Time();
+    public void imprimir(Time time, Jogador jogador) {
+        System.out.println("Time: " + time.getNome() + "\n-----------------");
 
-    public Escalacao() {
-        this.maxJogadores = 5;
-        this.jogadorAtual = 1;
-    }
-
-    public void criacaoJogardor() {
-        for (int i=0;i<maxJogadores;i++) {
-            if (this.jogadorAtual == this.maxJogadores) {
-                System.out.println("Já estou no limite máximo de jogadores.");
-                // imprimir();
-            } else {
-                this.jogadorAtual++;
-            }
+        for (int i = 0; i < jogador.getJogadores().length; i++) {
+            System.out.println(jogador.toString(i));
         }
     }
-
-    public void imprimir() {
-        System.out.println("Time:" + this.getNome() + "\n-----------------");
-        jogador.mostrarJogardor();
-    }
-
-    // public void diminuirMarcha()
-    // {
-    // if(this.jogadorAtual == 1)
-    // System.out.println("Já estou na marcha mínima.");
-    // else
-    // this.jogadorAtual--;
-    // }
 }
