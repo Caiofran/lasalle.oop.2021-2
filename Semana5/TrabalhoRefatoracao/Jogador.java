@@ -1,21 +1,41 @@
 package Semana5.TrabalhoRefatoracao;
 
-// 1-Utilizando os padrões e conceitos de encapsulamento vistos em sala de aula, refatorar as classes 
-// Jogador.java, Time.java
-
 public class Jogador {
 
-    private String jogadores[] = new String[5];
+    private String nome;
+    private String sobrenome;
+    private Integer idade;
+    private Time time;
 
-    public String[] getJogadores() {
-        return this.jogadores;
+    public Jogador() {
+
     }
 
-    public String toString(int i) {
-        return (i + 1) + " - " + jogadores[i];
+    public String getNome() {
+        return nome;
     }
 
-    public void setJogadores(String nome[]) {
-        this.jogadores = nome;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer integer) {
+        this.idade = integer;
+    }
+
+    public Time getTime() {
+        return time;
     }
 }

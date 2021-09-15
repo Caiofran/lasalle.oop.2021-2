@@ -1,16 +1,27 @@
 package Semana5.TrabalhoRefatoracao;
 
-// 1-Utilizando os padrões e conceitos de encapsulamento vistos em sala de aula, refatorar as classes 
-// Jogador.java, Time.java
-
 public class Time {
-    private String nomeTime;
+    
+    private String nome;
+	private String escudo;
 
-    public String getNome() {
-        return this.nomeTime;
-    }
+	public Time() {
+		// TODO Auto-generated constructor stub
+	}
 
-    public void setNome(String nome) {
-        this.nomeTime = nome;
-    }
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEscudo() {
+		return escudo;
+	}
+
+	public void setEscudo(String escudo) {
+		this.escudo = escudo;
+	}
 }

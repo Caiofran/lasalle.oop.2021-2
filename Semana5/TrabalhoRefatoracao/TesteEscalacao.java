@@ -1,46 +1,62 @@
 package Semana5.TrabalhoRefatoracao;
 
-// 4-Criar uma classe para testar. Nesse TesteEscalacao.java, deve conter:
-// - Criação de 5 jogadores
-// - Criação de 1 Time
-// - Escalação do Time, com os 5 jogadores e a data do jogo
-// - Imprimir a escalação criada
-
+import java.util.ArrayList;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class TesteEscalacao {
     public static void main(String[] args) {
-        Jogador jogador = new Jogador();
+
         Time time = new Time();
         Escalacao escalacao = new Escalacao();
-        String nomeJogador[] = new String[5];
-        Scanner sc = new Scanner(System.in);
+    
+        ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
+        Scanner scanner = new Scanner(System.in);
+    
+        Jogador jog1 = new Jogador();
+        Jogador jog2 = new Jogador();
+        Jogador jog3 = new Jogador();
+        Jogador jog4 = new Jogador();
+        Jogador jog5 = new Jogador();
+    
+        time.setNome(JOptionPane.showInputDialog("Entre com nome do time:"));
+    
+        System.out.println("Informe o nome do jogador 1: ");
+        jog1.setNome(scanner.nextLine());
+        jogadores.add(jog1);
+    
+        System.out.println("Informe o nome do jogador 2: ");
+        jog2.setNome(scanner.nextLine());
+        jogadores.add(jog2);
+    
+        System.out.println("Informe o nome do jogador 3: ");
+        jog3.setNome(scanner.nextLine());
+        jogadores.add(jog1);
+    
+        System.out.println("Informe o nome do jogador 4: ");
+        jog4.setNome(scanner.nextLine());
+        jogadores.add(jog4);
+    
+        System.out.println("Informe o nome do jogador 5: ");
+        jog5.setNome(scanner.nextLine());
+        jogadores.add(jog5);
 
-        // Criação de 1 Time
-        System.out.print("Digite o nome do time: ");
-        time.setNome(sc.nextLine());
-
-        // Criação de 5 jogadores
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Digite o nome do jogador: ");
-            nomeJogador[i] = sc.nextLine();
-            jogador.setJogadores(nomeJogador);
-        }
-
-        // Escalação do Time, com os 5 jogadores e a data do jogo
-        System.out.print("Digite o dia do jogo: ");
-        int diaJogo = sc.nextInt();
-        System.out.print("Digite o mês do jogo: ");
-        int mesJogo = sc.nextInt();
+    	System.out.print("Digite o dia do jogo: ");
+    	int dia = scanner.nextInt();
+    	System.out.print("Digite o mês do jogo: ");
+    	int mes = scanner.nextInt();
         System.out.print("Digite o ano do jogo: ");
-        int anoJogo = sc.nextInt();
-
-        // imprimir data
-        System.out.println("Data do jogo: " + diaJogo + "/" + mesJogo + "/" + anoJogo);
-
-        // Imprimir a escalação criada
-        escalacao.imprimir(time, jogador);
-
-        sc.close();
+    	int ano = scanner.nextInt();
+    
+        System.out.println(escalacao.getImprimir(jogadores));
+        System.out.println("Data do jogo: "+dia+"/"+mes+"/"+ano);
+        System.out.println("Time: " + time.getNome());
+        System.out.println("---------------");
+    
+        System.out.println("1 - " + jog1.getNome());
+        System.out.println("2 - " + jog2.getNome());
+        System.out.println("3 - " + jog3.getNome());
+        System.out.println("4 - " + jog4.getNome());
+        System.out.println("5 - " + jog5.getNome());
     }
 }
