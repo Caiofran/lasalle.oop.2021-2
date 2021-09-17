@@ -32,9 +32,12 @@ public class Aluno extends Pessoa {
 
     @Override
     public void saudacao() {
-        // TODO Auto-generated method stub
-        
+        System.out.println("Oi, eu sou um aluno");
     }
 
+    public final void comecarAula()
+    {
+        System.out.println("Aula começa as 19:15h");
+    }
     
 }

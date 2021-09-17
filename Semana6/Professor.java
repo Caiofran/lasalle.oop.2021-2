@@ -28,7 +28,6 @@ public class Professor extends Pessoa {
 
     @Override
     public void saudacao() {
-        // TODO Auto-generated method stub
-        
+        System.out.println("Oi, eu sou um professor");
     }
 }

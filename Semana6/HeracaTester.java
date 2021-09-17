@@ -1,7 +1,5 @@
 package Semana6;
 
-import javax.swing.AbstractAction;
-
 public class HeracaTester {
     public static void main(String[] args) {
         // Pessoa pessoa = new Pessoa("Caio");
@@ -12,7 +10,8 @@ public class HeracaTester {
         // pessoa.fazerAniversario();
 
         //aluno
-        Aluno aluno = new Aluno("s");
+        // Aluno aluno = new Aluno("s");
+        Aluno aluno = new AlunoBolsista("Caio");
         // aluno.setNome("Aluno novo");;
         aluno.fazerAniversario();
         // aluno.cancelarMatricula();
@@ -24,6 +23,7 @@ public class HeracaTester {
 
         System.out.println("Salario: " + professor.getSalario());
         professor.receberAumento();
+        System.out.println("Salario: " + professor.getSalario());
 
         //Funcionario
         Funcionario funcionario = new Funcionario();
@@ -33,5 +33,6 @@ public class HeracaTester {
         funcionario.mudarTrabalho();
 
         aluno.saudacao();
+        professor.saudacao();
     }
 }
