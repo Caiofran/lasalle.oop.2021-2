@@ -48,18 +48,22 @@ public class Calc implements ActionListener {
         txtNum2 = new JTextField("0");
         painel.add(txtNum2);
 
+        //Somar
         btnSomar = new JButton("Somar");
         btnSomar.addActionListener(this);
         painel.add(btnSomar);
 
+        // Subtração
         btnSubtracao = new JButton("Subtração");
         btnSubtracao.addActionListener(this);
         painel.add(btnSubtracao);
 
+        // Divisão
         btnDivisao = new JButton("Divisão");
         btnDivisao.addActionListener(this);
         painel.add(btnDivisao);
 
+        // Multiplicação
         btnMultiplicacao = new JButton("Multiplicação");
         btnMultiplicacao.addActionListener(this);
         painel.add(btnMultiplicacao);
