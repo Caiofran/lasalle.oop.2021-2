@@ -27,7 +27,7 @@ public class Calc implements ActionListener {
     private JLabel lblResultado;
 
     public Calc() {
-        janela = new JFrame("Semana 9 - Calculadora");
+        janela = new JFrame("Calculadora");
 
         painel = new JPanel();
         painel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
