@@ -81,19 +81,16 @@ public class Calc implements ActionListener {
             Integer num1 = Integer.parseInt(txtNum1.getText());
             Integer num2 = Integer.parseInt(txtNum2.getText());
 
-            if(evento.getSource() == btnSomar){
+            if (evento.getSource() == btnSomar) {
                 lblResultado.setText("Resultado = " + (num1 + num2));
                 lblResultado.setForeground(Color.BLACK);
-            }
-            else if(evento.getSource() == btnDivisao){
+            } else if (evento.getSource() == btnDivisao) {
                 lblResultado.setText("Resultado = " + (num1 / num2));
                 lblResultado.setForeground(Color.BLACK);
-            }
-            else if(evento.getSource() == btnMultiplicacao){
+            } else if (evento.getSource() == btnMultiplicacao) {
                 lblResultado.setText("Resultado = " + (num1 * num2));
                 lblResultado.setForeground(Color.BLACK);
-            }
-            else if(evento.getSource() == btnSubtracao){
+            } else if (evento.getSource() == btnSubtracao) {
                 lblResultado.setText("Resultado = " + (num1 - num2));
                 lblResultado.setForeground(Color.BLACK);
             }
