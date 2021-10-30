@@ -68,6 +68,7 @@ public class Calc implements ActionListener {
         btnMultiplicacao.addActionListener(this);
         painel.add(btnMultiplicacao);
 
+        // Resultado
         lblResultado = new JLabel("Resultado = ");
         painel.add(lblResultado);
 
