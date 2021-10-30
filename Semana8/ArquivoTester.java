@@ -7,7 +7,7 @@ public class ArquivoTester {
 
     public static void main(String[] args) {
 
-        Arquivo arq = new Arquivo("votos.csv");
+        Arquivo arq = new Arquivo("Semana8/votos.csv");
         List<Voto> votos = arq.apurarVotos();
 
         // imprime votos lidos
