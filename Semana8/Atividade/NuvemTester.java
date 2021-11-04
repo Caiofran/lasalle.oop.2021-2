@@ -7,24 +7,11 @@ import java.util.List;
 
 public class NuvemTester {
     public static void main(String[] args) {
-        Arquivo arq = new Arquivo("palavra.csv");
-        // List<Voto> votos = arq.apurarVotos();
+        Arquivo arq = new Arquivo("Semana8/Atividade/palavra.csv");
+        List<Palavra> palavras = arq.lerPalavras();
 
-        // // imprime votos lidos
-        // for (Voto voto : votos) {
-        //     System.out.println(voto);
-        // }
-
-        // Collections.sort(votos);
-
-        // System.out.println("Votos ordenados ****");
-        // // imprime votos lidos ORDENADA
-        // for (Voto voto : votos) {
-        //     System.out.println(voto);
-        // }
-
-        // Definir o candidato vencedor!!!
-
-        // Imprimir ranking final
+        for (Palavra palavra : palavras) {
+            System.out.println(palavra);
+        }
     }
 }

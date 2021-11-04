@@ -9,8 +9,8 @@ public class Arquivo {
 
     private String nomeArq;
 
-    public Arquivo(String nome) {
-        this.nomeArq = nome;
+    public Arquivo(String caminho) {
+        this.nomeArq = caminho;
     }
 
     public void imprimir() {
@@ -27,30 +27,29 @@ public class Arquivo {
         }
     }
 
-    // public List<Voto> apurarVotos() {
+    public List<Palavra> lerPalavras() {
 
-    //     List<Voto> listaVotos = new ArrayList<Voto>();
+        List<Palavra> listaPalavras = new ArrayList<Palavra>();
 
-    //     try (BufferedReader reader = new BufferedReader(new FileReader(this.nomeArq))) {
-    //         String linha = reader.readLine();
+        try (BufferedReader reader = new BufferedReader(new FileReader(this.nomeArq))) {
+            String linha = reader.readLine();
 
-    //         while (linha != null) {
-    //             // separar nome de votos (alex,30)
-    //             String[] votoUrna = linha.split(",");
-    //             Voto voto = new Voto(votoUrna[0], Integer.parseInt(votoUrna[1]));
+            while (linha != null) {
+                // separar nome de votos (alex,30)
+                String[] palavraLista = linha.split(" ");
+                Palavra palavra = new Palavra(palavraLista[0]);
 
-    //             listaVotos.add(voto);
+                listaPalavras.add(palavra);
 
-    //             // System.out.println(linha);
-    //             linha = reader.readLine();
-    //         }
+                // System.out.println(linha);
+                linha = reader.readLine();
+            }
 
-    //     } catch (Exception e) {
-    //         System.out.println(("Erro ao tentar ler arquivo!!" + e.getMessage()));
-    //     }
+        } catch (Exception e) {
+            System.out.println(("Erro ao tentar ler arquivo!!" + e.getMessage()));
+        }
 
-    //     return listaVotos;
+        return listaPalavras;
 
-    // }
-
+    }
 }
