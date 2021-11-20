@@ -8,9 +8,9 @@ public class ConnectionFactory {
 	private static final String DRIVE = "com.mysql.jdbc.Driver";
 	// private static final String URL =
 	// "jdbc:mysql://database-poo.cedmf23ew9dt.us-east-1.rds.amazonaws.com:3306/poo_database?useTimezone=true&serverTimezone=UTC";
-	private static final String URL = "jdbc:mysql://database-1.cuve3svqyxqb.us-east-1.rds.amazonaws.com:3306/bancoprog?useTimezone=true&serverTimezone=UTC";
+	private static final String URL = "jdbc:mysql://database-2.cuve3svqyxqb.us-east-1.rds.amazonaws.com:3306/bancoprog?useTimezone=true&serverTimezone=UTC";
 	private static final String USER = "admin";
-	private static final String SENHA = "adminadmin";
+	private static final String SENHA = "password";
 
 	public static Connection getConnection() throws ClassNotFoundException {
 		try {
